@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 export const GifGrid = ({ category }) => {
+
+    useEffect(() => {
+      getGifs();
+    }, [])
+    
 
     const getGifs = async() => {
         const url = 'https://api.giphy.com/v1/gifs/search?q=The+mandalorian&limit=10&api_key=u1775mXvH3OtSHfVaM2EIIfeO4XCxjp9';
