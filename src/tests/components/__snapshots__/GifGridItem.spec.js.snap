@@ -4,7 +4,12 @@ exports[`Pruebas en componente GifGridItem. debe de hacer match con el snapshot.
 <div
   className="card animate__animated animate__fadeIn"
 >
-  <img />
-  <p />
+  <img
+    alt="Soy un título"
+    src="https://localhost:8080"
+  />
+  <p>
+    Soy un título
+  </p>
 </div>
 `;
