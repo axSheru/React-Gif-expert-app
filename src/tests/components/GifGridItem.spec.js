@@ -17,4 +17,12 @@ describe('Pruebas en componente GifGridItem.', () => {
 
     });
 
+    test('debe de tener un párrafo con el título.', () => {
+
+        const p = wrapper.find( 'p' );
+        
+        expect( p.text().trim() ).toBe( title );
+
+    });
+
 });
