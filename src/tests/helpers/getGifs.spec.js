@@ -10,4 +10,12 @@ describe('Pruebas en getGifs fetch.', () => {
 
     });
 
+    test('debe de traer 0 elementos al no enviar una categoría.', async() => {
+
+        const gifs = await getGifs( '' );
+
+        expect( gifs.length ).toBe( 0 );
+
+    });
+
 });
