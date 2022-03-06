@@ -34,4 +34,12 @@ describe('Pruebas en componente GifGridItem.', () => {
 
     });
 
+    test('debe de tener la clase animate__fadeIn.', () => {
+
+        const div = wrapper.find( 'div' );
+        
+        expect( div.prop( 'className' ) ).toContain( 'animate__fadeIn' );
+
+    });
+
 });
