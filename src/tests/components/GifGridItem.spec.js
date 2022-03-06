@@ -25,4 +25,13 @@ describe('Pruebas en componente GifGridItem.', () => {
 
     });
 
+    test('debe de tener la imagen con el url y title de los props.', () => {
+
+        const img = wrapper.find( 'img' );
+        
+        expect( img.prop('src') ).toBe( url );
+        expect( img.prop('alt') ).toBe( title );
+
+    });
+
 });
