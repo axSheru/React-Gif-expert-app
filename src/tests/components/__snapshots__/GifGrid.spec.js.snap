@@ -17,3 +17,23 @@ exports[`Pruebas en el componente GifGrid. debe de hacer match con el snapshot. 
   />
 </Fragment>
 `;
+
+exports[`Pruebas en el componente GifGrid. debe de mostrar items cuando se cargan imágenes con useFetchGifs. 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    Netflix
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Cualquier cosa"
+      url="https://localhost/algo.jpg"
+    />
+  </div>
+</Fragment>
+`;
