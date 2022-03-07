@@ -4,9 +4,10 @@ import { AddCategory } from "../../components/AddCategory";
 describe('Pruebas en componente AddCategory.', () => {
 
     let wrapper;
-    const setCategories = () => {};
+    const setCategories = jest.fn();
 
     beforeEach(() => {
+        jest.clearAllMocks();
         wrapper = shallow( <AddCategory setCategories={ setCategories } /> );
     });
 
@@ -24,6 +25,14 @@ describe('Pruebas en componente AddCategory.', () => {
         input.simulate( 'change', { target: { value } });
 
         expect( wrapper.find( 'p' ).text().trim() ).toBe( value );
+
+    });
+
+    test('no debe de postear la información con submit si no hay valor de categoría.', () => {
+
+        wrapper.find( 'form' ).simulate( 'submit', { preventDefault(){} });
+
+        expect( setCategories ).not.toHaveBeenCalled();
 
     });
 
