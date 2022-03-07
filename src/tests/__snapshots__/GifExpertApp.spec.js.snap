@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente GifExpertApp. debe de hacer match con el snapshot. 1`] = `
+<Fragment>
+  <h2>
+    Gif expert app
+  </h2>
+  <AddCategory
+    setCategories={[Function]}
+  />
+  <hr />
+  <ol>
+    <GifGrid
+      category="Star Wars"
+      key="Star Wars"
+    />
+  </ol>
+</Fragment>
+`;
