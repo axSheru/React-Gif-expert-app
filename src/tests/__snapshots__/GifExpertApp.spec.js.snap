@@ -9,11 +9,6 @@ exports[`Pruebas en el componente GifExpertApp. debe de hacer match con el snaps
     setCategories={[Function]}
   />
   <hr />
-  <ol>
-    <GifGrid
-      category="Star Wars"
-      key="Star Wars"
-    />
-  </ol>
+  <ol />
 </Fragment>
 `;
