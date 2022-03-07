@@ -16,4 +16,15 @@ describe('Pruebas en componente AddCategory.', () => {
 
     });
 
+    test('debe de cambiar la caja de text.', () => {
+
+        const input = wrapper.find( 'input' );
+        const value = 'Hola mundo';
+
+        input.simulate( 'change', { target: { value } });
+
+        expect( wrapper.find( 'p' ).text().trim() ).toBe( value );
+
+    });
+
 });

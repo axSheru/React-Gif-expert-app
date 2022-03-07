@@ -4,6 +4,7 @@ exports[`Pruebas en componente AddCategory. debe de hacer match con el snapshot.
 <form
   onSubmit={[Function]}
 >
+  <p />
   <input
     onChange={[Function]}
     type="text"
